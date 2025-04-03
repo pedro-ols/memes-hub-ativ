@@ -1,7 +1,8 @@
 import styles from "./page.module.css";
 import Header from "./components/header/index.jsx";
-import HeroSection from "./components/hero-section";
+import HeroSection from "./components/heroSection";
 import Footer from "./components/footer";
+import CategoriesSection from "./components/categoriesSection";
 
 export default function Home() {
   // Array de dados dos memes para serem passados como props
@@ -100,16 +101,6 @@ export default function Home() {
     },
   ];
 
-  // Categorias de memes
-  const categories = [
-    { id: 1, name: "Programação", icon: "💻", count: 478 },
-    { id: 2, name: "Escola", icon: "📚", count: 325 },
-    { id: 3, name: "Trabalho", icon: "💼", count: 642 },
-    { id: 4, name: "Games", icon: "🎮", count: 513 },
-    { id: 5, name: "Relacionamentos", icon: "❤️", count: 287 },
-    { id: 6, name: "Esportes", icon: "⚽", count: 195 },
-  ];
-
   // Memes em destaque
   const featuredMemes = [
     {
@@ -160,24 +151,9 @@ export default function Home() {
 
       <div className={styles.mainContent}>
         <div className={styles.contentArea}>
-          <HeroSection/>
-          {/* COMPONENTE: CategoriesSection */}
-          <section className={styles.categoriesSection}>
-            <h2 className={styles.sectionTitle}>Explore por Categorias</h2>
-            <div className={styles.categoriesGrid}>
-              {categories.map((category) => (
-                <div key={category.id} className={styles.categoryCard}>
-                  <span className={styles.categoryIcon}>{category.icon}</span>
-                  <h3 className={styles.categoryName}>{category.name}</h3>
-                  <span className={styles.categoryCount}>
-                    {category.count} memes
-                  </span>
-                </div>
-              ))}
-            </div>
-          </section>
-          {/* FIM COMPONENTE: CategoriesSection */}
+          <HeroSection />
 
+          <CategoriesSection />
           {/* COMPONENTE: Feed */}
           <section className={styles.feedSection}>
             <div className={styles.feedHeader}>

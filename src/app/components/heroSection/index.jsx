@@ -1,4 +1,4 @@
-import styles from './hero-section.module.css';
+import styles from './heroSection.module.css';
 
 const memeOfTheDay = {
     id: 7,
