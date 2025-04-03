@@ -1,4 +1,5 @@
 import styles from "./page.module.css";
+import Header from "./components/header/index.jsx";
 
 export default function Home() {
   // Array de dados dos memes para serem passados como props
@@ -166,30 +167,7 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      {/* COMPONENTE: Header */}
-      <header className={styles.header}>
-        <div className={styles.logo}>
-          <h1>MemeVerse</h1>
-          <span>🌟</span>
-        </div>
-        <nav className={styles.nav}>
-          <a href="#" className={styles.active}>
-            Home
-          </a>
-          <a href="#">Trending</a>
-          <a href="#">Create</a>
-          <a href="#">Categories</a>
-          <a href="#">Profile</a>
-        </nav>
-
-        <div className={styles.userActions}>
-          <button className={styles.notificationBtn}>🔔</button>
-          <button className={styles.userAvatar}>
-            <img src="https://i.pravatar.cc/150?img=3" alt="Your profile" />
-          </button>
-        </div>
-      </header>
-      {/* FIM COMPONENTE: Header */}
+      <Header/>
 
       <div className={styles.mainContent}>
         <div className={styles.contentArea}>
