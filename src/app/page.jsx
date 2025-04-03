@@ -23,29 +23,23 @@ export default function Home() {
           <HeroSection />
 
           <CategoriesSection />
-          {/* COMPONENTE: Feed */}
+
           <Feed/>
 
-          {/* FIM COMPONENTE: Feed */}
-
-          {/* COMPONENTE: FeaturedMemesSection */}
           <FeaturedMemes/>
-          {/* FIM COMPONENTE: FeaturedMemesSection */}
 
-          {/* COMPONENTE: CreatorsSection */}
           <CreatorsSection/>
-          {/* FIM COMPONENTE: CreatorsSection */}
-
-          {/* COMPONENTE: NewsletterSection */}
+          
           <NewsLetterSection/>
-          {/* FIM COMPONENTE: NewsletterSection */}
+          
         </div>
-
-        {/* COMPONENTE: Sidebar */}
+        
         <SideBar/>
-        {/* FIM COMPONENTE: Sidebar */}
+        
       </div>
+
       <Footer/>
+      
     </div>
   );
 };
