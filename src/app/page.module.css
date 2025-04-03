@@ -88,46 +88,6 @@
   color: #666;
 }
 
-/* Estilos da InteractionBar */
-.interactionBar {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 15px;
-  border-top: 1px solid #eee;
-}
-
-.interactionButton {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  cursor: pointer;
-  transition: color 0.3s;
-  color: #666;
-  font-size: 14px;
-}
-
-.interactionButton:hover {
-  color: #4e5de4;
-}
-
-.loadMoreButton {
-  display: block;
-  margin: 0 auto;
-  background-color: #eef0fd;
-  color: #4e5de4;
-  border: none;
-  border-radius: 30px;
-  padding: 12px 24px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.loadMoreButton:hover {
-  background-color: #4e5de4;
-  color: white;
-}
-
 /* Responsividade */
 @media (max-width: 1024px) {
   .mainContent {

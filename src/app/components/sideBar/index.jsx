@@ -1,4 +1,5 @@
 import styles from "./sideBar.module.css";
+import EventCard from "../eventsCard";
 
 const upcomingEvents = [
     {
@@ -20,18 +21,8 @@ const SideBar = () => {
         <aside className={styles.sidebar}>
           <div className={styles.sidebarSection}>
             <h3 className={styles.sidebarTitle}>Eventos Próximos</h3>
-            {upcomingEvents.map((event) => (
-              // COMPONENTE: EventCard
-              <div key={event.id} className={styles.eventCard}>
-                <h4 className={styles.eventTitle}>{event.title}</h4>
-                <p className={styles.eventDate}>{event.date}</p>
-                <p className={styles.eventParticipants}>
-                  {event.participants} participantes
-                </p>
-                <button className={styles.eventButton}>Participar</button>
-              </div>
-              // FIM COMPONENTE: EventCard
-            ))}
+            <EventCard title={"Competição de Memes 2025"} date={"15 de Maio, 2025"} participants={356}/>
+            <EventCard title={"Workshop: Como Criar Memes Virai"} date={"22 de Maio, 2025"} participants={127}/>
           </div>
 
           <div className={styles.sidebarSection}>

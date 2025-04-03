@@ -1,0 +1,42 @@
+/* Componente EventCard */
+.eventCard {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 3px solid #4e5de4;
+}
+
+.eventTitle {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.eventDate {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 5px 0;
+}
+
+.eventParticipants {
+    font-size: 13px;
+    color: #888;
+    margin: 0 0 10px 0;
+}
+
+.eventButton {
+    background-color: transparent;
+    color: #4e5de4;
+    border: 1px solid #4e5de4;
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.eventButton:hover {
+    background-color: #4e5de4;
+    color: white;
+}

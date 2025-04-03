@@ -11,9 +11,6 @@ import SideBar from "./components/sideBar";
 export default function Home() {
 
 
-  // Eventos próximos
-
-
   return (
     <div className={styles.container}>
       <Header/>

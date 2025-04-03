@@ -1,4 +1,5 @@
 import styles from './featuredSection.module.css';
+import InteractionBar from '../interactionBar';
 
 const featuredMemes = [
     {
