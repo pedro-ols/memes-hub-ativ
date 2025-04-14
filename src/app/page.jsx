@@ -166,10 +166,42 @@ export default function Home() {
     },
   ];
 
+  // Itens de navegação
+  const navItems = [
+    {
+      id : 1,
+      name : "Home"
+    },
+    {
+      id : 2,
+      name : "Trending"
+    },
+    {
+      id : 3,
+      name : "Create"
+    },
+    {
+      id : 4,
+      name : "Categories"
+    },
+    {
+      id : 5,
+      name : "Profile"
+    },
+  ]
+
+  const logo = [
+    {
+      id : 1,
+      title : "MemeVerse",
+      span : "🌟"
+    }
+  ]
+
   return (
     <div className={styles.container}>
       {/* COMPONENTE: Header */}
-      <Header />
+      <Header navItems={navItems} logo={logo} />
       
       {/* FIM COMPONENTE: Header */}
 

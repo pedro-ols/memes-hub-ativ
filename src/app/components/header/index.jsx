@@ -1,20 +1,19 @@
 import styles from './header.module.css';
 
-const Header = () =>{
+const Header = ({ navItems, logo }) =>{
     return(
         <header className={styles.header}>
-        <div className={styles.logo}>
-          <h1>MemeVerse</h1>
-          <span>🌟</span>
-        </div>
+          {logo.map((logo) => (
+            <div className={styles.logo}>
+            <h1>{logo.title}</h1>
+            <span>{logo.span}</span>
+            </div>
+          ))}
+        
         <nav className={styles.nav}>
-          <a href="#" className={styles.active}>
-            Home
-          </a>
-          <a href="#">Trending</a>
-          <a href="#">Create</a>
-          <a href="#">Categories</a>
-          <a href="#">Profile</a>
+          {navItems.map((navItems) => (
+            <a key={navItems.id} href="#">{navItems.name}</a>
+          ))}
         </nav>
 
         <div className={styles.userActions}>
