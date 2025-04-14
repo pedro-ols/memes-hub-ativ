@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import Header from "./components/header";
 import HeroSection from "./components/heroSection";
 import CategoriesSection from "./components/categoriesSection";
+import Feed from "./components/feed"
 
 export default function Home() {
   // Array de dados dos memes para serem passados como props
@@ -211,7 +212,7 @@ export default function Home() {
           {/* FIM COMPONENTE: CategoriesSection */}
 
           {/* COMPONENTE: Feed */}
-         
+          <Feed meme = {memes} />
           {/* FIM COMPONENTE: Feed */}
 
           {/* COMPONENTE: FeaturedMemesSection */}

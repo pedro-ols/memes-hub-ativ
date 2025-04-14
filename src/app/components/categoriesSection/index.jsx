@@ -5,7 +5,11 @@ const CategoriesSection = ({ categories }) => {
   return (
     <section className={styles.categoriesSection}>
       <h2 className={styles.sectionTitle}>Explore por Categorias</h2>
-      <CategoryCard categories={categories} />
+      <div className={styles.categoriesGrid}>
+        {categories.map((categories) => (
+          <CategoryCard key={categories.id} category={categories} />
+        ))}
+      </div>
     </section>
   );
 };

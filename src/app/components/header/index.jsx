@@ -11,8 +11,8 @@ const Header = ({ navItems, logo }) =>{
           ))}
         
         <nav className={styles.nav}>
-          {navItems.map((navItems) => (
-            <a key={navItems.id} href="#">{navItems.name}</a>
+          {navItems.map((Item) => (
+            <a key={Item.id} href="#">{Item.name}</a>
           ))}
         </nav>
 
