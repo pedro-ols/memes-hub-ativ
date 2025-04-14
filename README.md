@@ -5,7 +5,7 @@
 ## 📝 Criação do projeto 📝
 
 ### Utilizei da documentação que realizamos durante as aulas de front-end para inicializar uma nova aplicação em React, assim como fizemos durante todo o aprendizado.
-## Ao iniciar da atividade, o professor disponibilizou o código de dois arquivos centrais (page.jsx e page.module.css), copiei esses códigos e transferi para meu projeto.
+### Ao iniciar da atividade, o professor disponibilizou o código de dois arquivos centrais (page.jsx e page.module.css), copiei esses códigos e transferi para meu projeto.
 
 ## 🧩 Componentização & Props 🧩
 
