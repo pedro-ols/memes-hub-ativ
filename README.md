@@ -2,18 +2,15 @@
 
 ## Assim como proposto em sala de aula, criei uma aplicação de Web em NextJS sobre um site de memes.
 
-# Criação do projeto
+# 📝 Criação do projeto 📝
 
 ## Utilizei da documentação que realizamos durante as aulas de front-end para inicializar uma nova aplicação em React, assim como fizemos durante todo o aprendizado.
 ## Ao iniciar da atividade, o professor disponibilizou o código de dois arquivos centrais (page.jsx e page.module.css), copiei esses códigos e transferi para meu projeto.
 
-# Componentização
+# 🧩 Componentização & Props 🧩
 
-## A partir do momento em que tinha em mãos toda a aplicação central, passei a separar os componentes seguindo a estrutura adequada de pastas.
-## Os componentes que achei que seriam necessários para a aplicação somam 12 (categoriesSection, creatorsSection, featuredSection, footer, header, heroSection, interactionBar, memeCard, newsLetterSection e sideBar).
+## Para começar, criei o componente da Header da aplicação, sem props, e em seguida, segui com o componente da Herosection, no entanto, um erro denunciou que não a haveria forma de continuar o desenvolvimento sem a aplicação de props na HeroSection. No entanto, eu não me lembrava exatamente a sintaxe do método map, e tive de consultar o material do professor, e com facilidade, consegui realizar. 
+## Aproveitando que estava fazendo a props de um componente, e me pus a fazer o da Header também, tive certos erros na passagem de propriedades do array que me travaram, mas consegui solucionar todos com certa dificuldade.
+## Logo, parti para o componente da seção de categorias, que deu certo de primeira. Mas como sou um dev de respeito, percebi que poderia componentizar os cards das categrias dentro da seção de categorias. Tive que pensar bastante para chegar a uma lógica funcional para a passagem de props de um componente menor dentro de outro componente paterno, mas, por incrível que pareça, consegui de primeira.
 
-# Props 
-
-## Depois de componentizar os elementos, percebi que muitos deles possuíam informações que podiam ser passadas em props. No entanto, tive extrema dificuldade nessa parte, pois não consegui acompanhar os conteúdos passados em aula e por isso só consegui fazer as props de dois elementos: os cards de eventos na side bar, os cards de meme do feed. Além disso, fiz os props da interactionbar, que foi passado pelo professor.
-## De primeiro momento, eu não consegui utilizar do método map no props, por isso, retirei esse método, e já que só eram dois eventos, não tive tanto problema. Mas na hora de fazer os cards de memes, que havia em maior quantidade, tive de me virar e depois de muito esforço, consegui.
 
