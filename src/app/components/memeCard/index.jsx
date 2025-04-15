@@ -19,9 +19,8 @@ const MemeCard = ({ meme }) => {
             <div className={styles.memeContent}>
               <h3 className={styles.memeTitle}>{meme.title}</h3>
               <p className={styles.memeDescription}>{meme.description}</p>
-              {/* {meme.map((meme) => ( 
-                <InteractionBar key={meme.id} meme={meme}/>
-              ))}; */}
+
+                <InteractionBar meme={meme}/>
         
             </div>
           </div>
