@@ -207,19 +207,9 @@ export default function Home() {
       <div className={styles.mainContent}>
         <div className={styles.contentArea}>
           <HeroSection memeOfTheDay={memeOfTheDay} />
-
-          {/* COMPONENTE: CategoriesSection */}
           <CategoriesSection categories={categories}/>
-          {/* FIM COMPONENTE: CategoriesSection */}
-
-          {/* COMPONENTE: Feed */}
           <Feed memes={memes} />
-          {/* FIM COMPONENTE: Feed */}
-
-          {/* COMPONENTE: FeaturedMemesSection */}
           <FeaturedMemesSection memes={featuredMemes}/>
-          {/* FIM COMPONENTE: FeaturedMemesSection */}
-
           {/* COMPONENTE: CreatorsSection */}
           <section className={styles.creatorsSection}>
             <h2 className={styles.sectionTitle}>Criadores em Destaque</h2>

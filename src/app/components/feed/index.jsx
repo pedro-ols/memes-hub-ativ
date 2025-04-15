@@ -1,4 +1,4 @@
-import styles from './feed.module.css';
+import styles from '../feed/feed.module.css';
 import MemeCard from '../memeCard';
 
 const Feed = ({ memes }) =>{
