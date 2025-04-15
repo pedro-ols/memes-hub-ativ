@@ -1,0 +1,78 @@
+
+/* Estilos dos Criadores em Destaque */
+.creatorsSection {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.creatorsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.creatorCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+
+.creatorCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.creatorAvatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4e5de4;
+  margin-bottom: 15px;
+}
+
+.creatorName {
+  font-size: 16px;
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.creatorBio {
+  font-size: 13px;
+  color: #666;
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+}
+
+.creatorStats {
+  margin-bottom: 15px;
+}
+
+.creatorFollowers {
+  font-size: 14px;
+  color: #4e5de4;
+  font-weight: bold;
+}
+
+.followButton {
+  background-color: #4e5de4;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.followButton:hover {
+  background-color: #3a48c5;
+  transform: translateY(-2px);
+}

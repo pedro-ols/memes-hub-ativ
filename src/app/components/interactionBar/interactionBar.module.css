@@ -1,0 +1,24 @@
+
+
+/* Estilos da InteractionBar */
+.interactionBar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+  }
+  
+  .interactionButton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: color 0.3s;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .interactionButton:hover {
+    color: #4e5de4;
+  }
+  

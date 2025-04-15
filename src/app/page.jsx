@@ -2,8 +2,10 @@ import styles from "./page.module.css";
 import Header from "./components/header";
 import HeroSection from "./components/heroSection";
 import CategoriesSection from "./components/categoriesSection";
-import Feed from "./components/feed"
+import Feed from "./components/feed";
 import FeaturedMemesSection from "./components/featuredMemesSection";
+import NewsLetterSection from "./components/newsLetterSection";
+import CreatorsSection from "./components/creatorsSection";
 
 export default function Home() {
   // Array de dados dos memes para serem passados como props
@@ -207,64 +209,11 @@ export default function Home() {
       <div className={styles.mainContent}>
         <div className={styles.contentArea}>
           <HeroSection memeOfTheDay={memeOfTheDay} />
-          <CategoriesSection categories={categories}/>
+          <CategoriesSection categories={categories} />
           <Feed memes={memes} />
-          <FeaturedMemesSection memes={featuredMemes}/>
-          {/* COMPONENTE: CreatorsSection */}
-          <section className={styles.creatorsSection}>
-            <h2 className={styles.sectionTitle}>Criadores em Destaque</h2>
-            <div className={styles.creatorsGrid}>
-              {topCreators.map((creator) => (
-                // COMPONENTE: CreatorCard
-                <div key={creator.id} className={styles.creatorCard}>
-                  <img
-                    src={creator.avatar}
-                    alt={creator.name}
-                    className={styles.creatorAvatar}
-                  />
-                  <h3 className={styles.creatorName}>{creator.name}</h3>
-                  <p className={styles.creatorBio}>{creator.bio}</p>
-                  <div className={styles.creatorStats}>
-                    <span className={styles.creatorFollowers}>
-                      {creator.followers} seguidores
-                    </span>
-                  </div>
-                  <button className={styles.followButton}>Seguir</button>
-                </div>
-                // FIM COMPONENTE: CreatorCard
-              ))}
-            </div>
-          </section>
-          {/* FIM COMPONENTE: CreatorsSection */}
-
-          {/* COMPONENTE: NewsletterSection */}
-          <section className={styles.newsletterSection}>
-            <div className={styles.newsletterContent}>
-              <h2 className={styles.newsletterTitle}>Fique por dentro!</h2>
-              <p className={styles.newsletterDescription}>
-                Assine nossa newsletter e receba os melhores memes toda semana!
-              </p>
-              <div className={styles.newsletterForm}>
-                <input
-                  type="email"
-                  placeholder="Seu melhor e-mail"
-                  className={styles.newsletterInput}
-                />
-                <button className={styles.newsletterButton}>Assinar</button>
-              </div>
-              <p className={styles.newsletterDisclaimer}>
-                Nós respeitamos sua privacidade. Cancele quando quiser.
-              </p>
-            </div>
-            <div className={styles.newsletterImageContainer}>
-              <img
-                src="https://i.imgur.com/OELrGl5.jpg"
-                alt="Newsletter"
-                className={styles.newsletterImage}
-              />
-            </div>
-          </section>
-          {/* FIM COMPONENTE: NewsletterSection */}
+          <FeaturedMemesSection memes={featuredMemes} />
+          <CreatorsSection creator={topCreators}/>
+          <NewsLetterSection />
         </div>
 
         {/* COMPONENTE: Sidebar */}
