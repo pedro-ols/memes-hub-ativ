@@ -16,7 +16,6 @@ const Feed = ({ memes }) =>{
       </div>
 
       <div className={styles.feedGrid}>
-        {/* Aqui mapeamos os memes do array para criar múltiplos cards */}
         {memes.map((meme) => (
           <MemeCard key = {meme.id} meme = {meme} />
         ))}

@@ -4,7 +4,7 @@ const Header = ({ navItems, logo }) =>{
     return(
         <header className={styles.header}>
           {logo.map((logo) => (
-            <div className={styles.logo}>
+            <div key={logo.id} className={styles.logo}>
             <h1>{logo.title}</h1>
             <span>{logo.span}</span>
             </div>
