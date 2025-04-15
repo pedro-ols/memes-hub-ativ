@@ -58,3 +58,8 @@
   cursor: pointer;
   transition: all 0.3s;
 }
+
+.loadMoreButton:hover {
+  background-color: #4e5de4;
+  color: white;
+}
