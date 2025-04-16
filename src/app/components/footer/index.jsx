@@ -1,6 +1,6 @@
 import styles from "./footer.module.css";
 
-const Footer = ({ socialLink }) => {
+const Footer = ({ socialLink, footerData }) => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerTop}>
@@ -10,46 +10,20 @@ const Footer = ({ socialLink }) => {
         </div>
 
         <div className={styles.footerNavContainer}>
-          <div className={styles.footerNavSection}>
-            <h3>Navegação</h3>
-            <nav className={styles.footerNav}>
-              <a href="#">Home</a>
-              <a href="#">Trending</a>
-              <a href="#">Create</a>
-              <a href="#">Categories</a>
-              <a href="#">Profile</a>
-            </nav>
-          </div>
-
-          <div className={styles.footerNavSection}>
-            <h3>Recursos</h3>
-            <nav className={styles.footerNav}>
-              <a href="#">Editor de Memes</a>
-              <a href="#">Templates</a>
-              <a href="#">API</a>
-              <a href="#">Para Desenvolvedores</a>
-            </nav>
-          </div>
-
-          <div className={styles.footerNavSection}>
-            <h3>Empresa</h3>
-            <nav className={styles.footerNav}>
-              <a href="#">Sobre nós</a>
-              <a href="#">Carreiras</a>
-              <a href="#">Blog</a>
-              <a href="#">Contato</a>
-            </nav>
-          </div>
-
-          <div className={styles.footerNavSection}>
-            <h3>Legal</h3>
-            <nav className={styles.footerNav}>
-              <a href="#">Termos de Uso</a>
-              <a href="#">Privacidade</a>
-              <a href="#">Cookies</a>
-              <a href="#">LGPD</a>
-            </nav>
-          </div>
+          {Object.entries(footerData).map(([sectionTitle, links]) => (
+            <div key={sectionTitle} className={styles.footerNavSection}>
+              <h3>
+                {sectionTitle.charAt(0).toUpperCase() + sectionTitle.slice(1)}
+              </h3>
+              <nav className={styles.footerNav}>
+                {links.map((link, index) => (
+                  <a key={index} href={link.href}>
+                    {link.name}
+                  </a>
+                ))}
+              </nav>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -61,7 +35,7 @@ const Footer = ({ socialLink }) => {
               <span>{link.icon}</span>
             </a>
           ))}
-          </div>
+        </div>
       </div>
     </footer>
   );

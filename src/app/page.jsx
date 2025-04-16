@@ -204,26 +204,53 @@ export default function Home() {
     },
   ];
 
-  const socialLinks = [ 
+  const footerData = {
+    navigation: [
+      { name: "Home", href: "#" },
+      { name: "Trending", href: "#" },
+      { name: "Create", href: "#" },
+      { name: "Categories", href: "#" },
+      { name: "Profile", href: "#" },
+    ],
+    resources: [
+      { name: "Editor de Memes", href: "#" },
+      { name: "Templates", href: "#" },
+      { name: "API", href: "#" },
+      { name: "Para Desenvolvedores", href: "#" },
+    ],
+    company: [
+      { name: "Sobre nós", href: "#" },
+      { name: "Carreiras", href: "#" },
+      { name: "Blog", href: "#" },
+      { name: "Contato", href: "#" },
+    ],
+    legal: [
+      { name: "Termos de Uso", href: "#" },
+      { name: "Privacidade", href: "#" },
+      { name: "Cookies", href: "#" },
+      { name: "LGPD", href: "#" },
+    ],
+  };
+  const socialLinks = [
     {
       id: 1,
       icon: "📱",
-      linkHRef: "#"
+      linkHRef: "#",
     },
     {
       id: 2,
       icon: "📘",
-      linkHRef: "#"
+      linkHRef: "#",
     },
     {
       id: 3,
       icon: "📸",
-      linkHRef: "#"
+      linkHRef: "#",
     },
     {
       id: 4,
       icon: "🐦",
-      linkHRef: "#"
+      linkHRef: "#",
     },
   ];
 
@@ -236,7 +263,7 @@ export default function Home() {
           <CategoriesSection categories={categories} />
           <Feed memes={memes} />
           <FeaturedMemesSection memes={featuredMemes} />
-          <CreatorsSection creator={topCreators}/>
+          <CreatorsSection creator={topCreators} />
           <NewsLetterSection />
         </div>
 
@@ -302,7 +329,7 @@ export default function Home() {
       </div>
 
       {/* COMPONENTE: Footer */}
-      <Footer socialLink={socialLinks}/>
+      <Footer socialLink={socialLinks} footerData={footerData}/>
       {/* FIM COMPONENTE: Footer */}
     </div>
   );
