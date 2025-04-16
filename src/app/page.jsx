@@ -255,6 +255,25 @@ export default function Home() {
     },
   ];
 
+  const premiumFeatures = [
+    {
+      id: 1,
+      feature: "Sem anúncios",
+    },
+    {
+      id: 2,
+      feature: "Uploads ilimitados",
+    },
+    {
+      id: 3,
+      feature: "Ferramentas de edição avançadas",
+    },
+    {
+      id: 4,
+      feature: "Estatísticas detalhadas",
+    }
+  ]
+
   return (
     <div className={styles.container}>
       <Header navItems={navItems} logo={logo} />
@@ -269,7 +288,7 @@ export default function Home() {
         </div>
 
         {/* COMPONENTE: Sidebar */}
-        <Sidebar upcomingEvents={upcomingEvents} />
+        <Sidebar upcomingEvents={upcomingEvents} premiumFeatures={premiumFeatures}/>
         {/* FIM COMPONENTE: Sidebar */}
       </div>
 
