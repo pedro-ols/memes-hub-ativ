@@ -1,7 +1,8 @@
 import styles from "./sideBar.module.css";
 import EventCard from "../eventCard";
+import Tags from "../tags";
 
-const Sidebar = ({ upcomingEvents, premiumFeatures }) => {
+const Sidebar = ({ upcomingEvents, premiumFeatures, tags }) => {
     return (
         <aside className={styles.sidebar}>
           <div className={styles.sidebarSection}>
@@ -30,27 +31,13 @@ const Sidebar = ({ upcomingEvents, premiumFeatures }) => {
 
           <div className={styles.sidebarSection}>
             <h3 className={styles.sidebarTitle}>Tags Populares</h3>
-            <div className={styles.tagCloud}>
-              <span className={`${styles.tag} ${styles.tagLarge}`}>
-                #memeday
-              </span>
-              <span className={styles.tag}>#programação</span>
-              <span className={`${styles.tag} ${styles.tagMedium}`}>
-                #humor
-              </span>
-              <span className={styles.tag}>#escola</span>
-              <span className={`${styles.tag} ${styles.tagLarge}`}>
-                #trabalhoremoto
-              </span>
-              <span className={styles.tag}>#segundafeira</span>
-              <span className={`${styles.tag} ${styles.tagMedium}`}>
-                #games
-              </span>
-              <span className={styles.tag}>#nofilter</span>
-            </div>
+            {tags.map((tag) => (
+              <Tags key={tag.id} tag={tag} />
+            ))}
+            
           </div>
         </aside>
     );
-    }
-
-export default Sidebar;
+  };
+  
+  export default Sidebar;

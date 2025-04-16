@@ -1,0 +1,30 @@
+.tagCloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+.tag {
+  display: inline-block;
+  background-color: #eef0fd;
+  color: #4e5de4;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tag:hover {
+  background-color: #4e5de4;
+  color: white;
+}
+
+.tagLarge {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.tagMedium {
+  font-size: 14px;
+}
+

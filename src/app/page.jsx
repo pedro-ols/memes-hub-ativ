@@ -173,7 +173,48 @@ export default function Home() {
     },
   ];
 
-  // Itens de navegação
+ const tags = [
+  {
+    id: 1,
+    name: "#memeday",
+    large: true,
+  },
+  {
+    id: 2,
+    name: "#programação",
+    large: false,
+  },
+  {
+    id: 3,
+    name: "#humor",
+    large: false,
+  },
+  {
+    id: 4,
+    name: "#escola",
+    large: false,
+  },
+  {
+    id: 5,
+    name: "#trabalhoremoto",
+    large: true,
+  },
+  {
+    id: 6,
+    name: "#segundafeira",
+    large: false,
+  },
+  {
+    id: 7,
+    name: "#games",
+    large: false,
+  },
+  {
+    id: 8,
+    name: "#nofilter",
+    large: false,
+  }
+ ]
   const navItems = [
     {
       id: 1,
@@ -286,15 +327,9 @@ export default function Home() {
           <CreatorsSection creator={topCreators} />
           <NewsLetterSection />
         </div>
-
-        {/* COMPONENTE: Sidebar */}
-        <Sidebar upcomingEvents={upcomingEvents} premiumFeatures={premiumFeatures}/>
-        {/* FIM COMPONENTE: Sidebar */}
+        <Sidebar upcomingEvents={upcomingEvents} premiumFeatures={premiumFeatures} tags={tags}/>
       </div>
-
-      {/* COMPONENTE: Footer */}
-      <Footer socialLink={socialLinks} footerData={footerData}/>
-      {/* FIM COMPONENTE: Footer */}
+      <Footer socialLink={socialLinks} footerData={footerData} tag={tags}/>
     </div>
   );
 }
